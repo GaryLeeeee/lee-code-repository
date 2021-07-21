@@ -7,28 +7,28 @@ spring:
 
 # Mybatis-plus
 mybatis-plus:
-  # ·ÅÔÚresourceÄ¿Â¼ classpath:/mapper/*Mapper.xml
+  # æ”¾åœ¨resourceç›®å½• classpath:/mapper/*Mapper.xml
   mapper-locations: classpath:/mybatis/mapper/*Mapper.xml
-  # ÊµÌåÉ¨Ãè£¬¶à¸öpackageÓÃ¶ººÅ»òÕß·ÖºÅ·Ö¸ô
+  # å®ä½“æ‰«æï¼Œå¤šä¸ªpackageç”¨é€—å·æˆ–è€…åˆ†å·åˆ†éš”
   typeAliasesPackage: com.garylee.repository.mybatisplus.domain
   global-config:
-    # Ö÷¼üÀàĞÍ  0:"Êı¾İ¿âID×ÔÔö", 1:"ÓÃ»§ÊäÈëID",2:"È«¾ÖÎ¨Ò»ID (Êı×ÖÀàĞÍÎ¨Ò»ID)", 3:"È«¾ÖÎ¨Ò»ID UUID";
+    # ä¸»é”®ç±»å‹  0:"æ•°æ®åº“IDè‡ªå¢", 1:"ç”¨æˆ·è¾“å…¥ID",2:"å…¨å±€å”¯ä¸€ID (æ•°å­—ç±»å‹å”¯ä¸€ID)", 3:"å…¨å±€å”¯ä¸€ID UUID";
     id-type: 2
-    # ×Ö¶Î²ßÂÔ 0:"ºöÂÔÅĞ¶Ï",1:"·Ç NULL ÅĞ¶Ï",2:"·Ç¿ÕÅĞ¶Ï"
+    # å­—æ®µç­–ç•¥ 0:"å¿½ç•¥åˆ¤æ–­",1:"é NULL åˆ¤æ–­",2:"éç©ºåˆ¤æ–­"
     field-strategy: 2
-    # ÍÕ·åÏÂ»®Ïß×ª»»
+    # é©¼å³°ä¸‹åˆ’çº¿è½¬æ¢
     db-column-underline: true
-    # Ë¢ĞÂmapper µ÷ÊÔÉñÆ÷
+    # åˆ·æ–°mapper è°ƒè¯•ç¥å™¨
     refresh-mapper: true
-    # Êı¾İ¿â´óĞ´ÏÂ»®Ïß×ª»»
+    # æ•°æ®åº“å¤§å†™ä¸‹åˆ’çº¿è½¬æ¢
     #capital-mode: true
-    # Âß¼­É¾³ıÅäÖÃ£¨ÏÂÃæ3¸öÅäÖÃ£©
+    # é€»è¾‘åˆ é™¤é…ç½®ï¼ˆä¸‹é¢3ä¸ªé…ç½®ï¼‰
     logic-delete-value: 0
     logic-not-delete-value: 1
-    # SQL ½âÎö»º´æ£¬¿ªÆôºó¶à×â»§ @SqlParser ×¢½âÉúĞ§
+    # SQL è§£æç¼“å­˜ï¼Œå¼€å¯åå¤šç§Ÿæˆ· @SqlParser æ³¨è§£ç”Ÿæ•ˆ
     sql-parser-cache: true
   configuration:
     map-underscore-to-camel-case: true
     cache-enabled: false
-    # ¿ØÖÆÌ¨´òÓ¡sqlÓï¾ä
+    # æ§åˆ¶å°æ‰“å°sqlè¯­å¥
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
