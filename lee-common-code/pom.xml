@@ -14,6 +14,14 @@
     <name>lee-common-code</name>
     <description>通用代码库</description>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
