@@ -17,6 +17,7 @@
 
     <modules>
         <module>lee-db-code</module>
+        <module>lee-common-code</module>
     </modules>
 
 	<dependencies>
