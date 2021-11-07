@@ -1,0 +1,6 @@
+spring:
+  lee-rabbitmq:
+    addresses: localhost:5672
+    username: test_username
+    password: test_password
+    virtual-host: /
