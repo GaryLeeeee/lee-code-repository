@@ -23,3 +23,8 @@ Go kit采用三层架构方式
   "data": "pong"
 }
 ```
+
+### 5、如何优雅停止进程？
+简单来说，就是通过捕获停止信号量来让正在进行的请求完成之后猜停止进程。
+
+具体可看[如何优雅停止Go进程？](https://garyleeeee.github.io/2024/02/21/golang/ru-he-you-ya-ting-zhi-go-jin-cheng/)

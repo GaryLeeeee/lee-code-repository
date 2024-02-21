@@ -24,6 +24,7 @@ func main() {
 	// 监听ctrl+c kill
 	go func() {
 		s := make(chan os.Signal, 1)
+		// 后面信号量不传默认全部
 		signal.Notify(s, syscall.SIGINT, syscall.SIGTERM)
 		errChan <- fmt.Errorf("%s", <-s)
 	}()
